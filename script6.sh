@@ -1,5 +1,10 @@
 #!/bin/bash
 
+var()
+{
+To find the value of y is greater than X or Equal to
+}
+
 echo "enter the value of X"
 read X
 
