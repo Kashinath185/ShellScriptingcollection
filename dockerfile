@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:latest
 #getting the war file
 copy Hello.war
 # Starting the tomcat application server
