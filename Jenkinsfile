@@ -7,7 +7,7 @@ pipeline {
     stage('Stage1') {
            
       steps {
-        sh 'echo "This is stage one"'
+        sh 'docker run -itd -p 8085:8080 hello'
         sh 'echo "First stage is succesfull"'
       }
     }
