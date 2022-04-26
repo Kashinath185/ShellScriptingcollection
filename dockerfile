@@ -5,5 +5,4 @@ COPY Hello.war
 CMD ["catalina.sh", "run"]
 #Building the image
 docker build -t hello .
-# listing the docker images
-docker ps
+
