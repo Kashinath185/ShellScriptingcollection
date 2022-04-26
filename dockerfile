@@ -1,6 +1,6 @@
 FROM tomcat:latest
 #getting the war file
-copy Hello.war
+COPY Hello.war
 # Starting the tomcat application server
 CMD ["catalina.sh", "run"]
 #Building the image
