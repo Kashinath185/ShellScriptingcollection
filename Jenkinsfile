@@ -7,8 +7,7 @@ pipeline {
     stage('Stage1') {
            
       steps {
-        sh 'docker run -itd -p 8085:8080 /home/diatoz/Docker_Deploy'
-        sh 'echo "First stage is succesfull"'
+      sh 'echo "First stage is succesfull"'
       }
     }
 
