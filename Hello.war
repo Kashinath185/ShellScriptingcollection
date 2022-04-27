@@ -1,0 +1,16 @@
+" zip.vim version v28
+" Browsing zipfile /testfolder/Hello.war
+" Select a file with cursor and press ENTER
+
+META-INF/MANIFEST.MF
+META-INF/
+WEB-INF/
+WEB-INF/classes/
+WEB-INF/lib/
+WEB-INF/web.xml
+hello.html
+images/
+images/Pair programming-rafiki.png
+images/Programming-pana.png
+
+
