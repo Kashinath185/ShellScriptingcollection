@@ -9,7 +9,7 @@ pipeline {
            
       steps {
         script{
-        sh 'docker build -t kashinath94/testimage Dockerfile'
+        sh 'docker build -t kashinath94/testimage .'
         sh 'docker run -itd -p 8086:8080 kashinath94/testimage'
         sh 'echo "First stage is succesfull"'
         }        
