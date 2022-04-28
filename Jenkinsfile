@@ -8,7 +8,7 @@ pipeline {
     stage('Stage1') {
            
       steps {
-        sh '''docker build -t testimage  .
+        sh '''docker build -t kashinath94/testimage .
           docker run -itd -p 8086:8080 testimage'''
         
       sh 'echo "First stage is succesfull"'
