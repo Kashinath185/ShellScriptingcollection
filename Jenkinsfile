@@ -5,13 +5,17 @@ pipeline {
   
   
   stages {
-    stage('Stage1') {
+    stage('Build Docker Image') {
            
       steps {
-        sh '''docker build -t kashinath94/testimage Dockerfile
-          docker run -itd -p 8086:8080 testimage'''
+        script{
+        sh 'docker build -t kashinath94/testimage Dockerfile'
+        sh 'docker run -itd -p 8086:8080 kashinath94/testimage'
+        sh 'echo "First stage is succesfull"'
+        }        
+              
         
-      sh 'echo "First stage is succesfull"'
+      
       }
     }
 
