@@ -2,6 +2,31 @@ pipeline {
   agent {
     dockerfile true
   }
+  environment { 
+3
+        registry = "kashinath94 / hello" 
+4
+        registryCredential = 'kashinath94' 
+5
+        dockerImage = '' 
+6
+    }
+  
+  stage('Building our image') { 
+15
+            steps { 
+16
+                script { 
+17
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER" 
+18
+                }
+19
+            } 
+20
+        }
+  
+  
   stages {
     stage('Stage1') {
            
