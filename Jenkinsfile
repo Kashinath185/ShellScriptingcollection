@@ -5,15 +5,8 @@ pipeline {
   
   stages {
     stage('Build Docker Image') {
-           
-      steps {
-        script {
-               sh 'docker build .'
-               sh 'echo "This is first stage"'   
-        }
-                     
-      }
-    }
+           app = docker.build("kashinath94/Hello")
+               }
 
     stage('Stage2') {
       steps {
