@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    dockerfile true
+    Dockerfile true
   }
   
   
@@ -9,7 +9,7 @@ pipeline {
            
       steps {
         script{
-        sh 'docker --version'  
+        //sh 'docker --version'  
         //sh 'docker build -t kashinath94/testimage .'
        //sh 'echo "First stage is succesfull"'
         }        
