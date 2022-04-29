@@ -8,6 +8,7 @@ pipeline {
            
       steps {
         script {
+               sh 'docker build -t testimage .'
                sh 'echo "This is first stage"'   
         }
                      
