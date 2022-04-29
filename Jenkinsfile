@@ -7,7 +7,9 @@ pipeline {
     stage('Build Docker Image') {
            
       steps {
+        script {
                sh 'echo "This is first stage"'   
+        }
                      
       }
     }
