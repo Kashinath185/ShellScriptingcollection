@@ -3,14 +3,12 @@ pipeline {
     dockerfile true
   }
   
-  
   stages {
     stage('Build Docker Image') {
            
       steps {
-        sh 'echo "This is the First stage"'     
-              
-             
+               sh 'echo "This is first stage"'   
+                     
       }
     }
 
