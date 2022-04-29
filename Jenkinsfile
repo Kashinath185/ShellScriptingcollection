@@ -8,11 +8,7 @@ pipeline {
     stage('Build Docker Image') {
            
       steps {
-        script{
-        //sh 'docker version'  
-        //sh 'docker build -t kashinath94/testimage .'
-       //sh 'echo "First stage is succesfull"'
-        }        
+        sh 'echo "This is the First stage"'     
               
              
       }
