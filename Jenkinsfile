@@ -4,8 +4,9 @@ pipeline {
   }
   
   stages {
-    stage('Build Docker Image') {
-           app = docker.build("kashinath94/Hello")
+    stage('Build Docker Image')  {
+	       steps {
+                 sh 'docker build -t i7 /var/lib/jenkins/workspace/git_integrate'
                }
 
     stage('Stage2') {
